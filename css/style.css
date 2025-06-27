@@ -1,0 +1,283 @@
+@font-face {
+    font-family: 'Century Gothic';
+    src: local('Century Gothic'), url('/fonts/centurygothic.ttf') format('truetype');
+}
+
+
+:root {
+  --header-height: 480px;
+  --background-color: #FFEAD8;
+  --primary-main-color: #E8988A;
+  --secondary-main-color: #aeaeae;
+  --secondary-light-color: #eee;
+}
+
+html, body {
+    margin: 0;
+    max-width: 100vw;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+h1, nav, footer {
+    font-family: "Century Gothic", serif;
+}
+
+h2, h3, h4 {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 36px;
+}
+
+h2, h3 {
+    line-height: 36px;
+}
+
+h4 {
+    line-height: 24px;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+    background-image: url("/images/pets-banner-1.png");
+    background-size: auto;
+    background-position-x: center;
+    background-position-y: bottom;
+    height: var(--header-height);
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.header-wrapper {
+    background-color: rgba(255, 234, 216, 0.4);
+
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: center;
+
+    padding: 40px 10px 10px 10px;
+}
+
+.header-wrapper h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--primary-main-color);
+    text-decoration: none;
+    
+}
+
+nav {
+    padding: 8px 0px;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media (max-width: 786px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+nav a {
+    color: var(--secondary-main-color);
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+    display: block;
+
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    color: var(--primary-main-color);
+}
+
+#main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+main {
+  padding: 0px 40px 40px 40px;
+
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+main > * {
+  margin-top: 20px;
+}
+
+
+section .section-header {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+
+  margin-bottom: 40px;
+}
+
+section .section-content {
+  font-size: 24px;
+}
+
+.categories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.categories > li {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s;
+  padding: 10px;
+}
+
+.category-card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.category-card__content {
+  padding-top: 10px;
+}
+
+.category-card__content h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.category-card__content h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--secondary-main-color);
+}
+
+.category-card__icon{
+  width: 256px;
+  height: 256px;
+}
+
+footer {
+  background-color: var(--primary-main-color);
+  color: var(--secondary-light-color);
+}
+
+footer {
+  font-size: 14px;
+}
+
+.footer-wrapper {
+  max-width: 1200px;
+  margin: auto;
+
+  padding: 10px 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+@media (max-width: 786px) {
+  .footer-content {
+    flex-direction: column;
+    width: auto;
+  }
+}
+
+.footer-content__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  padding-right: 10px;
+}
+
+@media (max-width: 786px) {
+  .footer-content__item {
+    align-items: flex-start;
+  }
+}
+
+.footer-content__item:last-child {
+  padding-right: 0px;
+}
+
+.footer-content__item ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content__nav {
+  padding: 0px;
+  display: block;
+}
+
+.footer-content__nav a {
+  color: var(--secondary-light-color);
+  display: block;
+  padding: 0;
+  text-align: left;
+}
+
+.footer-content__nav a:hover {
+  color: var(--secondary-light-color);
+}
+
+#copyright {
+  text-align: center;
+}
