@@ -59,7 +59,7 @@ a {
 }
 
 header {
-    background-image: url("/images/pets-banner-1.png");
+    background-image: url("../images/petsBanner.png");
     background-size: auto;
     background-position-x: center;
     background-position-y: bottom;
