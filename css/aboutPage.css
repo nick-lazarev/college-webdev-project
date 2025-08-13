@@ -1,0 +1,19 @@
+.categories {
+    justify-content: center;
+}
+
+.category-card {
+  width: 100%;
+}
+.category-card__icon {
+  height: auto;
+  max-width: 800px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .category-card__content h3 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

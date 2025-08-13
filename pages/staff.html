@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+        <link rel="stylesheet" href="../jquery/jquery-ui.min.css">
+        <link href="../css/style.css" rel="stylesheet"/>
+        <link href="../css/staffPage.css" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <meta charset="utf-8" />
+        <title>Veterinary Clinic</title>
+    </head>
+    <body>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="./about.html">About clinic</a>
+            <a href="../index.html">Contact us</a>
+            <a href="../index.html">Services</a>
+        </nav>
+        <header>
+            <div class="header-wrapper">
+                <h1><a href="/index.html">Our Veterinarians</a></h1>
+            </div>
+        </header>
+        <div id="main-wrapper">
+            <main>
+                <section>
+                    <ul class="categories">
+                        <li>
+                            <div class="category-card inactive">
+                                <img src="../images/male-doctor.png" class="category-card__icon" alt="doctor-icon"/>
+                                <div class="category-card__content">
+                                    <h3>John Doe</h3>
+                                    <h4>Therapist<br />10 years of experience</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="category-card inactive">
+                                <img src="../images/female-doctor.png" class="category-card__icon" alt="doctor-icon"/>
+                                <div class="category-card__content">
+                                    <h3>Jane Doe</h3>
+                                    <h4>Surgeon<br />12 years of experience</h4>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <ul class="categories">
+                        <li>
+                            <div class="category-card inactive">
+                                <img src="../images/male-doctor.png" class="category-card__icon" alt="doctor-icon"/>
+                                <div class="category-card__content">
+                                    <h3>John Doe</h3>
+                                    <h4>Therapist<br />10 years of experience</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="category-card inactive">
+                                <img src="../images/female-doctor.png" class="category-card__icon" alt="doctor-icon"/>
+                                <div class="category-card__content">
+                                    <h3>Jane Doe</h3>
+                                    <h4>Surgeon<br />12 years of experience</h4>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section id="button-section">
+                  <a href="#modalApplication" rel="modal:open" id="button-apply" class="button size-large color-secondary">Become part of our team</a>
+                </section>
+            </main>
+            
+            <footer>
+                <div class="footer-wrapper">
+                    <div class="footer-content">
+                        <div class="footer-content__item">
+                            <div class="footer-content__item-content">
+                                <h3>Clinic hours</h3>
+                                <ul>
+                                    <li>Mon-Sat: 8am - 6pm</li>
+                                    <li>Sun: 10am - 4pm</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-content__item">
+                            <div class="footer-content__item-content">
+                                <h3>Clinic areas</h3>
+                                <ul>
+                                    <li>Kitchener</li>
+                                    <li>Waterloo</li>
+                                    <li>Cambridge</li>
+                                    <li>Guelph</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-content__item">
+                            <div class="footer-content__item-content">
+                                <h3>Quick links</h3>
+                                <nav class="footer-content__nav">
+                                    <ul>
+                                        <li><a href="../index.html">Home</a></li>
+                                        <li><a href="../index.html">Services</a></li>
+                                        <li><a href="./about.html">About clinic</a></li>
+                                        <li><a href="../index.html">Contact us</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <p id='copyright'>
+                        Copyright &#169 Veterinary Clinic
+                    </p>
+                </div>
+            </footer>
+          </div>
+        <div id="modalApplication" class="modal">
+        </div>
+        <script src="../js/staffPage.js"></script>
+    </body>
+</html>
