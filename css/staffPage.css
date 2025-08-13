@@ -1,0 +1,169 @@
+.modal {
+  padding: 20px;
+}
+
+main {
+  width: 100%;
+}
+
+section {
+    display: flex;
+}
+section .categories{
+    width: 100%;
+}
+#button-section{
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+form > * {
+    margin-top: 24px;
+}
+form > *:first-child {
+    margin-top: 0px;
+}
+
+.formHeader > * {
+    margin-top: 8px;
+}
+.formHeader > *:first-child {
+    margin-top: 0px;
+}
+.formHeader h1 {
+    font-size: 28px;
+}
+.formHeader h4 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.formContent {
+    display: flex;
+    flex-direction: column;
+}
+.formContent > * {
+    margin-top: 16px;
+}
+.formContent > *:first-child {
+    margin-top: 0px;
+}
+
+.formBlock {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #FFF5E4;
+    border-radius: 8px;
+    padding: 12px;
+}
+.formBlock > * {
+    margin-top: 16px;
+}
+.formBlock > *:first-child {
+    margin-top: 0px;
+}
+.formBlock__subtitle{
+    font-size: 20px;
+}
+
+.formFields {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.formFields > * {
+    margin-top: 16px;
+}
+.formFields > *:first-child {
+    margin-top: 0px;
+}
+
+.formControls {
+    display: flex;
+    flex-direction: row;
+}
+.formControls > * {
+    margin-left: 8px;
+}
+.formControls > *:first-child {
+    margin-left: 0px;
+}
+
+button, .button {
+    cursor: pointer;
+
+    border: none;
+    border-radius: 4px;
+    padding: 8px 24px;
+
+    text-align: center;
+}
+
+button:hover, .button:hover {
+    background-color: #e1e1e1;
+}
+button.variant-text, .button.variant-text {
+    background-color: transparent;
+    border: none;    
+}
+button.variant-text:hover, .button.variant-text:hover {
+    color: #aaa
+}
+button.size-large, .button.size-large {
+    font-size: 24px;
+    padding: 16px 36px;
+    font-weight: 700;
+}
+button.color-secondary, .button.color-secondary {
+    background-color: #8ac7e8;
+    color: #fff;
+}
+
+.textField {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.textField > *,
+.textField__group > * {
+    margin-left: 8px;
+}
+.textField > *:first-child,
+.textField__group > *:first-child {
+    margin-left: 0px;
+}
+.textField > * {
+    display: flex;
+}
+.textField__group-item {
+    display: flex;
+    align-items: center;
+}
+.textField__group-item input {
+    margin-top: 0px;
+}
+.textField input {
+    flex-grow: 1;
+}
+.textField label.error {
+    display: none !important;
+}
+
+input {
+    outline: none;
+    border-radius: 4px;;
+    padding: 4px;
+    border: none;
+    border: 1px solid #e1e1e1;
+}
+input.error {
+    border: 1px solid red;
+}
+input.variant-filled {
+    border: 1px solid #fff;
+}

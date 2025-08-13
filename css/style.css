@@ -18,6 +18,7 @@ html, body {
     width: 100%;
     min-height: 100vh;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -67,6 +68,12 @@ header {
     background-repeat: no-repeat;
     display: flex;
 }
+@media (max-width: 768px) {
+  header {
+    background-image: none;
+    height: auto;
+  }
+}
 
 .header-wrapper {
     background-color: rgba(255, 234, 216, 0.4);
@@ -76,7 +83,7 @@ header {
     flex-direction: row;
     justify-content: center;
 
-    padding: 40px 10px 10px 10px;
+    padding: 40px 10px;
 }
 
 .header-wrapper h1 {
@@ -85,7 +92,12 @@ header {
     font-weight: 700;
     color: var(--primary-main-color);
     text-decoration: none;
-    
+    text-align: center;
+}
+@media (max-width: 768px) {
+  .header-wrapper h1 {
+    font-size: 36px;
+  }
 }
 
 nav {
@@ -137,9 +149,17 @@ main {
   flex-direction: column;
   flex-grow: 1;
 }
+@media (max-width: 768px) {
+  main {
+    padding: 0px 12px 12px 12px;
+  }
+}
 
 main > * {
   margin-top: 20px;
+}
+main > *:first-child {
+  margin-top: 0px;
 }
 
 
@@ -175,10 +195,17 @@ section .section-content {
   transition: all 0.3s;
   padding: 10px;
 }
-
 .category-card:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+.category-card.inactive{
+  cursor: initial;
+  transition: none;
+}
+.category-card.inactive:hover{
+  cursor: initial;
+  transform: none;
 }
 
 .category-card__content {
